@@ -1,0 +1,122 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table; 
+}
+
+#wrapper {
+    width: 800px;
+    margin: 0 auto; 
+}
+
+#input {
+    width: 340px;
+    padding: 6px;
+    display: block;
+}
+
+#task {
+    background-color: white;
+    border: solid 1px black;
+    float: left;
+    margin-top: 10px;
+    padding: 6px;
+    width: 300px;
+}
+
+#add {
+    font-size: 16px;
+    margin-left: 12px;
+    margin-top: 10px;
+    padding: 6px;
+}
+
+.task-list__item {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center; 
+}
+
+.task-list__item input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.complete {
+    color: #999;
+}
+
+.completeEdit {
+    display: none;
+}
+
+
+.Game {
+    color: saddlebrown;
+}
+
+.Work {
+    color: forestgreen;
+}
+
+.Collage {
+    color: darkcyan;
+}
+
+.Meeting {
+    color: dodgerblue;
+}
+
+.Game::before {
+    content: '🏈';
+    margin-right: 10px;
+}
+
+.Work::before {
+    content: '🔨';
+    margin-right: 10px;
+}
+
+.Collage::before {
+    content: '🎓';
+    margin-right: 10px;
+}
+
+.Meeting::before {
+    content: '💻';
+    margin-right: 10px;
+}
+
+.edit {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    background-image: url(/img/pencil.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20.75px;
+    width: 20px;
+    height: 20px;
+}
+
+.delete {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    background-image: url(/img/trash.png);
+    background-repeat: no-repeat;
+    background-size: 12px 15.75px;
+    width: 12px;
+    height: 16px;
+}
+
+.time {
+    margin-left: 20px;
+}
