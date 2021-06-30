@@ -110,7 +110,7 @@ function addTaskDOM(task) {
     removeTasks.addEventListener('click', () => {
         if (checkbox.checked) {
             for (let i = 0; i < tasks.length; i++) {
-                if (tasks[i].taskStatus == checkbox.checked) {
+                if (tasks[i].taskStatus == true) {
                     tasks.splice(i, 1);
                     localStorage.setItem('tasks', JSON.stringify(tasks));
                     item.remove();
